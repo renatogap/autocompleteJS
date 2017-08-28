@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/08/2017, 11:59:41
+    Author     : renato
+*/
+
+#formulario ul {
+    background: #fff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    max-height: 300px;
+    height: auto;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+#formulario ul li {
+    list-style:none;
+    -border-bottom:1px solid #eee;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+#formulario ul li:hover {
+    background-color: #ebebeb;
+    -color: white;
+}
+
+#formulario ul li.active {
+    background-color: #ebebeb;
+}
