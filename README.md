@@ -78,14 +78,16 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 
 2. Instancia a classe 
 ```javascript
-<script type="text/javascript">       
+<script type="text/javascript">      
+
   obj = new AutocompleteJS('uf');
   ...
+  
 ```  
 
 3. Invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
 ```javascript
-<script type="text/javascript">       
+     
   obj.setOptions([
       {id: "AC", name: "Acre"},
       {id: "AL", name: "Alagoas"},
@@ -115,7 +117,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
       {id: "SE", name: "Sergipe"},
       {id: "TO", name: "Tocantins"}
   ]);
-</script>
+
 ```
 
 ---
