@@ -1,7 +1,7 @@
 # Plugin AutocompleteJS
 AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso da bilioteca jQuery, basta importar no seu projeto para começar a brincar.
 
-##Uso
+## Uso
 
 
 1. Importa o arquivo js
