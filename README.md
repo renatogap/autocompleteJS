@@ -6,6 +6,8 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 - [Exemplo](https://renatogap.github.io/autocompleteJS/)
 
 
+---
+
 
 ## Uso
 
