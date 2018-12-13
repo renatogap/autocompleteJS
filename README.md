@@ -74,7 +74,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
       </select>
   </div>
 </div>
-
+```
 
 2. Instancia a classe 
 ```javascript
