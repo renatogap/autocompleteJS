@@ -1,0 +1,33 @@
+ul.autojs {
+    background: #fff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    max-height: 300px;
+    max-height: 20em;
+    height: auto;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+ul.autojs li {
+    list-style:none;
+    -border-bottom:1px solid #eee;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+ul.autojs li:hover {
+    background-color: #ebebeb;
+}
+
+ul.autojs li.active {
+    background-color: #ebebeb;
+}
