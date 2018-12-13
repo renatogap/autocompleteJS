@@ -1,22 +1,20 @@
-# Autocomplete
-Autocomplete com Javascript Nativo.
+# Plugin AutocompleteJS
+AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso da bilioteca jQuery, basta importar no seu projeto para começar a brincar.
 
-## Modo de uso 1
+##Uso
 
-### Criando o combo no HTML
 
-Importa o arquivo js
+1. Importa o arquivo js
 ```html
 <script type="text/javascript" src="js/autocomplete-js.js"></script>
 ```
 
-Importa os arquivos css 'autocomplete-js.css' e 'bootstrap.min.css'
+2. Importa os arquivos css 'autocomplete-js.css' e 'bootstrap.min.css'
 ```html
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/autocomplete-js.css" rel="stylesheet" type="text/css">
 ```
 
-Cria no HTML o combo
+3. Cria no HTML o combobox
 ```html
 <div class="form-group row">
   <label for="frutas" class="col-sm-2 col-form-label">UF</label>
@@ -54,23 +52,40 @@ Cria no HTML o combo
 </div>
 ```
 
-Instancia a classe no javascript passando o 'id' como parmâmetro
+4. Instancia a classe no javascript passando o 'id' como parmâmetro
 ```javascript
 <script type="text/javascript">       
   obj = new AutocompleteJS('uf');
 </script>
 ```
 
----
+5. Pronto, agora é só fazer bom proveito do autocomplete
 
-## Modo de uso 2
+---
 
 ### Criando o combo via Javascript
 
-Instancia a classe e invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
+1. Cria no HTML o combobox ***vazio***
+```html
+<div class="form-group row">
+  <label for="frutas" class="col-sm-2 col-form-label">UF</label>
+  <div class="col-sm-10">
+      <select name="uf" id="uf">        
+      </select>
+  </div>
+</div>
+
+
+2. Instancia a classe 
 ```javascript
 <script type="text/javascript">       
   obj = new AutocompleteJS('uf');
+  ...
+```  
+
+3. Invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
+```javascript
+<script type="text/javascript">       
   obj.setOptions([
       {id: "AC", name: "Acre"},
       {id: "AL", name: "Alagoas"},
@@ -109,10 +124,10 @@ Instancia a classe e invoca o método "**setOptions()**" passando nos parâmetro
 
 Pegando o valor selecionado no combo
 ```javascript
-oController1.getValue();
+obj.getValue();
 ```
 
-Setando o valor no combo, será selecionado automaticamente o item com o valor informado
+Setando o valor no combo. Será selecionado automaticamente o item com o valor informado
 ```javascript
-oController1.setValue('PA');
+obj.setValue('PA');
 ```
