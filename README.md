@@ -1,7 +1,9 @@
 # Autocomplete
 Autocomplete com Javascript Nativo.
 
-## Uso
+## Modo de uso 1
+
+### Criando o combo no HTML
 
 Importa o arquivo js
 ```html
@@ -61,7 +63,9 @@ Instancia a classe no javascript passando o 'id' como parmâmetro
 
 ---
 
-## Montar o combo via Javascript usando Array de objetos
+## Modo de uso 2
+
+### Criando o combo via Javascript
 
 Instancia a classe e invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
 ```javascript
