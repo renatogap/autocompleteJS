@@ -9,7 +9,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 <script type="text/javascript" src="js/autocomplete-js.js"></script>
 ```
 
-2. Importa os arquivos css 'autocomplete-js.css' e 'bootstrap.min.css'
+2. Importa o arquivo css 'autocomplete-js.css' e 'bootstrap.min.css'
 ```html
 <link href="css/autocomplete-js.css" rel="stylesheet" type="text/css">
 ```
