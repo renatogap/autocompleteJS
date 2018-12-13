@@ -59,9 +59,11 @@ Instancia a classe no javascript passando o 'id' como parmâmetro
 </script>
 ```
 
-## Criar o combo no Javascript usando Array de objetos
+---
 
-Instancia a classe e invoca o método "setOptions()" passando nos parâmetros um array de objetos
+## Montar o combo via Javascript usando Array de objetos
+
+Instancia a classe e invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
 ```javascript
 <script type="text/javascript">       
   obj = new AutocompleteJS('uf');
@@ -97,6 +99,7 @@ Instancia a classe e invoca o método "setOptions()" passando nos parâmetros um
 </script>
 ```
 
+---
 
 ## Obter e setar um valor no combo via javascript
 
