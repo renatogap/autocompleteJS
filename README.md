@@ -59,7 +59,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 </script>
 ```
 
-5. Pronto, agora é só fazer bom proveito do autocomplete
+5. Pronto, agora é só fazer bom proveito
 
 ---
 
