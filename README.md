@@ -14,12 +14,12 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 
 1. Importa o arquivo js
 ```html
-<script type="text/javascript" src="js/autocomplete-js.js"></script>
+<script type="text/javascript" src="js/AutocompleteJs.js"></script>
 ```
 
 2. Importa o arquivo css 'autocomplete-js.css' e 'bootstrap.min.css'
 ```html
-<link href="css/autocomplete-js.css" rel="stylesheet" type="text/css">
+<link href="css/AutocompleteJs.css" rel="stylesheet" type="text/css">
 ```
 
 3. Cria no HTML o combobox
