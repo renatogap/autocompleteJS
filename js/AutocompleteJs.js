@@ -88,11 +88,15 @@ class AutocompleteJS {
             for(let i=0; i < options.length; i++){                
                 let li = document.createElement('li');
                 li.dataset.value = options[i].value;
-                li.appendChild(document.createTextNode(options[i].innerHTML));
+                li.appendChild(document.createTextNode(options[i].innerHTML.toUpperCase()));
                 this._ul.appendChild(li);
 
-                data[i] = {id: options[i].value, name: options[i].innerHTML};
+                data[i] = {id: options[i].value, name: options[i].innerHTML.toUpperCase()};
             }
+            
+            this._caret = document.createElement('span');
+            this._caret.classList.add('caret');
+            this._input.parentNode.appendChild(this._caret);
 
             this._oLista =  data;
         }
@@ -149,10 +153,10 @@ class AutocompleteJS {
                 
                 let option = document.createElement('option');
                 option.value = data[i].id;
-                option.appendChild(document.createTextNode(data[i].name));
+                option.appendChild(document.createTextNode(data[i].name).toUpperCase());
                 this._select.appendChild(option);
                 
-                dataList[i] = {id: data[i].id, name: data[i].name};
+                dataList[i] = {id: data[i].id, name: data[i].name.toUpperCase()};
             }
 
             this._oLista =  dataList;
@@ -330,7 +334,6 @@ class AutocompleteJS {
     
     
     _paintString(searchList, stringDigitada) {
-        let textoPintado = '';
         let li = new Array();
         let index = 0;
 
@@ -342,9 +345,14 @@ class AutocompleteJS {
                 let strPalavra  = this.removerAcentos(palavra[j]);
 
                 stringDigitada.forEach((strBusca) => {
+                    
+                    //comparação lowercase
                     if(strPalavra.indexOf(strBusca) !== -1){
-                        textoPintado = palavra[j].substr(0, strBusca.length);
-                        li[index] = li[index].replace(textoPintado, '<b>'+textoPintado+'</b>');
+                        
+                        let strBuscaUpperCase = strBusca.toUpperCase();
+                        
+                        //marcação com uppercase
+                        li[index] = li[index].replace(strBuscaUpperCase, '<b>'+strBuscaUpperCase+'</b>');
                     }
                 });
             }
@@ -391,7 +399,7 @@ class AutocompleteJS {
     }
     
     _inputStyleInit() {
-        this._input.style.background = '#f2f2f2';
+        this._input.style.padding = '2px 30px 2px 10px';
         this._input.style.cursor = 'pointer';
     }
     

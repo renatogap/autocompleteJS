@@ -14,9 +14,17 @@ ul.autojs {
     overflow-y:scroll;
 }
 
+.caret {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 30px;
+    cursor: pointer;
+}
+
 ul.autojs li {
     list-style:none;
-    -border-bottom:1px solid #eee;
+    border-bottom:1px solid #eee;
+    border-right:1px solid #eee;
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -25,9 +33,10 @@ ul.autojs li {
 
 /* Change the link color on hover */
 ul.autojs li:hover {
-    background-color: #ebebeb;
+    background-color: #08C; color: white;
 }
 
 ul.autojs li.active {
-    background-color: #ebebeb;
+    background-color: #08C; color: white;
 }
+
