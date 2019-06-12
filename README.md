@@ -63,7 +63,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 4. Instancia a classe no javascript passando o 'id' como parmâmetro
 ```javascript
 <script type="text/javascript">       
-  obj = new AutocompleteJS('uf');
+  var obj = new AutocompleteJS('uf');
 </script>
 ```
 
@@ -88,7 +88,7 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 ```javascript
 <script type="text/javascript">      
 
-  obj = new AutocompleteJS('uf');
+  var obj = new AutocompleteJS('uf');
   ...
   
 ```  
