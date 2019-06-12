@@ -3,7 +3,8 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 
 ### Demo
 
-- [Exemplo](https://renatogap.github.io/autocompleteJS/)
+- [Exemplo 1](https://renatogap.github.io/autocompleteJS/exemplo/exemplo1.html)
+- [Exemplo 2](https://renatogap.github.io/autocompleteJS/exemplo/exemplo2.html)
 
 
 ---
