@@ -14,13 +14,6 @@ ul.autojs {
     overflow-y:scroll;
 }
 
-.caret {
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 30px;
-    cursor: pointer;
-}
-
 ul.autojs li {
     list-style:none;
     border-bottom:1px solid #eee;

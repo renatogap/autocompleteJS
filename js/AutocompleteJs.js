@@ -96,6 +96,13 @@ class AutocompleteJS {
             
             this._caret = document.createElement('span');
             this._caret.classList.add('caret');
+            
+            this._caret.style.position = 'absolute';
+            this._caret.style.top      = 'calc(50% - 1px)';
+            this._caret.style.right    = '30px';
+            this._caret.style.cursor   = 'pointer';
+                    
+                    
             this._input.parentNode.appendChild(this._caret);
 
             this._oLista =  data;
@@ -448,7 +455,7 @@ class AutocompleteJS {
     
     removerAcentos( newStringComAcento ){
         var string = newStringComAcento.toLowerCase();
-        var mapaAcentosHex 	= {
+        var mapaAcentosHex  = {
                 a : /[\xE0-\xE6]/g,
                 e : /[\xE8-\xEB]/g,
                 i : /[\xEC-\xEF]/g,
