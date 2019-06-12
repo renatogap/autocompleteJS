@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AutocompleteJS - Exemplo 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/AutocompleteJs.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <form style="padding: 50px;" action="res.php" method="post">
+                <div class="form-group row">
+                    <label for="frutas" class="col-sm-12 col-form-label">UF</label>
+                    <div class="col-sm-10">
+                        <select name="uf" id="uf" data-min="2" data-limit="100">                            
+                        </select>
+                    </div>
+                  </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="submit" class="btn btn-primary" value="Salvar">
+                    </div>
+                </div>                
+            </form>
+        </div>
+
+        <script type="text/javascript" src="../js/AutocompleteJs.js"></script>
+        <script type="text/javascript">
+            var obj = new AutocompleteJS('uf');
+
+            obj.setOptions([
+              {id: "AC", name: "Acre"},
+              {id: "AL", name: "Alagoas"},
+              {id: "AP", name: "Amapá"},
+              {id: "AM", name: "Amazonas"},
+              {id: "BA", name: "Bahia"},
+              {id: "CE", name: "Ceará"},
+              {id: "DF", name: "Distrito Federal"},
+              {id: "ES", name: "Espírito Santo"},
+              {id: "GO", name: "Goiás"},
+              {id: "MA", name: "Maranhão"},
+              {id: "MT", name: "Mato Grosso"},
+              {id: "MS", name: "Mato Grosso do Sul"},
+              {id: "MG", name: "Minas Gerais"},
+              {id: "PA", name: "Pará"},
+              {id: "PB", name: "Paraíba"},
+              {id: "PR", name: "Paraná"},
+              {id: "PE", name: "Pernambuco"},
+              {id: "PI", name: "Piauí"},
+              {id: "RJ", name: "Rio de Janeiro"},
+              {id: "RN", name: "Rio Grande do Norte"},
+              {id: "RS", name: "Rio Grande do Sul"},
+              {id: "RO", name: "Rondônia"},
+              {id: "RR", name: "Roraima"},
+              {id: "SC", name: "Santa Catarina"},
+              {id: "SP", name: "São Paulo"},
+              {id: "SE", name: "Sergipe"},
+              {id: "TO", name: "Tocantins"}
+          ]);
+
+        </script>
+    </body>
+</html>
