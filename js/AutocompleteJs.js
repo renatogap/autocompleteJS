@@ -155,12 +155,12 @@ class AutocompleteJS {
 
                 let li = document.createElement('li');
                 li.dataset.value = data[i].id;
-                li.appendChild(document.createTextNode(data[i].name));
+                li.appendChild(document.createTextNode(data[i].name.toUpperCase()));
                 this._ul.appendChild(li);
                 
                 let option = document.createElement('option');
                 option.value = data[i].id;
-                option.appendChild(document.createTextNode(data[i].name).toUpperCase());
+                option.appendChild(document.createTextNode(data[i].name.toUpperCase()));
                 this._select.appendChild(option);
                 
                 dataList[i] = {id: data[i].id, name: data[i].name.toUpperCase()};
