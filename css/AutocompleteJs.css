@@ -5,19 +5,19 @@ ul.autojs {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 700px;
     position: absolute;
     z-index: 999;
-    max-height: 300px;
-    max-height: 20em;
+    /*max-height: 300px;*/
+    max-height: 25.9em;
     height: auto;
-    overflow:hidden; 
-    overflow-y:scroll;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 ul.autojs li {
-    list-style:none;
-    border-bottom:1px solid #eee;
-    border-right:1px solid #eee;
+    list-style: none;
+    border-bottom: 1px solid #eee;
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -26,10 +26,11 @@ ul.autojs li {
 
 /* Change the link color on hover */
 ul.autojs li:hover {
-    background-color: #08C; color: white;
+    background-color: #337ab7;
+    color: white;
 }
 
 ul.autojs li.active {
-    background-color: #08C; color: white;
+    background-color: #337ab7;
+    color: white;
 }
-
