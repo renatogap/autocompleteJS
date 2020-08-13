@@ -80,6 +80,10 @@ class AutocompleteJS {
         this._inputStyleInit();
         this._select.parentNode.appendChild(this._input);
 
+        if(this._select.classList.contains('form-control-sm')){
+            this._input.classList.add('form-control-sm');
+        }
+
         if(this._select.disabled) {
             this.setDisabled();
         }
@@ -128,13 +132,13 @@ class AutocompleteJS {
             
                 this._caret = document.createElement('div');
                 //Bootstrap 3
-                this._caret.classList.add('caret');
-                this._caret.style.top      = '1em';
+                //this._caret.classList.add('caret');
+                //this._caret.style.top      = '1em';
 
                 //Bootstrap 4
-                //this._caret.classList.add('dropdown-toggle');
-		//this._caret.style.top      = '0.5em';
-		
+                this._caret.classList.add('dropdown-toggle');
+                this._caret.style.top      = '0.5em';
+
                 this._caret.style.position = 'absolute';
                 this._caret.style.right    = '30px';
                 this._caret.style.cursor   = 'pointer';
@@ -219,7 +223,6 @@ class AutocompleteJS {
     
     _eventClick() {
         window.addEventListener('click', (e) => {
-            console.log(e.target.parentNode.parentNode);
             
             if(e.target == this._input){ //selected input
                 this._search();
