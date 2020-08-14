@@ -13,17 +13,13 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 ## Uso
 
 
-1. Importa o arquivo js
+1. Importa o arquivo js e css
 ```html
+<link href="css/AutocompleteJs.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/AutocompleteJs.js"></script>
 ```
 
-2. Importa o arquivo css 'autocomplete-js.css' e 'bootstrap.min.css'
-```html
-<link href="css/AutocompleteJs.css" rel="stylesheet" type="text/css">
-```
-
-3. Cria no HTML o combobox
+2. Cria no HTML o combobox
 ```html
 <div class="form-group row">
   <label for="frutas" class="col-sm-2 col-form-label">UF</label>
@@ -61,42 +57,31 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
 </div>
 ```
 
-4. Instancia a classe no javascript passando o 'id' como parmâmetro
+3. Instancia a classe no javascript passando o 'id' como parmâmetro
 ```javascript
 <script type="text/javascript">       
-  var obj = new AutocompleteJS('uf');
-</script>
-```
+  let obj = new AutocompleteJS('uf');
 
-5. Pronto, agora é só fazer bom proveito
+```
 
 ---
 
 ### Criando o combo via Javascript
 
-1. Cria no HTML o combobox ***vazio***
+1. Cria no HTML o combo ***vazio***
 ```html
-<div class="form-group row">
-  <label for="frutas" class="col-sm-2 col-form-label">UF</label>
-  <div class="col-sm-10">
-      <select name="uf" id="uf">        
-      </select>
-  </div>
-</div>
+
+<select name="uf" id="uf">
+</select>
+
 ```
 
-2. Instancia a classe 
+2. Instancia a classe e invoca o método "**setOptions()**" passando nos parâmetros um array de objetos com os indices "id" e "name":
 ```javascript
 <script type="text/javascript">      
 
-  var obj = new AutocompleteJS('uf');
-  ...
+  let obj = new AutocompleteJS('uf');
   
-```  
-
-3. Invoca o método "**setOptions()**" passando nos parâmetros um array de objetos
-```javascript
-     
   obj.setOptions([
       {id: "AC", name: "Acre"},
       {id: "AL", name: "Alagoas"},
@@ -105,40 +90,32 @@ AutocompleteJS é um plugin feito apenas com javascript puro. Não requer o uso 
       {id: "BA", name: "Bahia"},
       {id: "CE", name: "Ceará"},
       {id: "DF", name: "Distrito Federal"},
-      {id: "ES", name: "Espírito Santo"},
-      {id: "GO", name: "Goiás"},
-      {id: "MA", name: "Maranhão"},
-      {id: "MT", name: "Mato Grosso"},
-      {id: "MS", name: "Mato Grosso do Sul"},
-      {id: "MG", name: "Minas Gerais"},
-      {id: "PA", name: "Pará"},
-      {id: "PB", name: "Paraíba"},
-      {id: "PR", name: "Paraná"},
-      {id: "PE", name: "Pernambuco"},
-      {id: "PI", name: "Piauí"},
-      {id: "RJ", name: "Rio de Janeiro"},
-      {id: "RN", name: "Rio Grande do Norte"},
-      {id: "RS", name: "Rio Grande do Sul"},
-      {id: "RO", name: "Rondônia"},
-      {id: "RR", name: "Roraima"},
-      {id: "SC", name: "Santa Catarina"},
-      {id: "SP", name: "São Paulo"},
-      {id: "SE", name: "Sergipe"},
-      {id: "TO", name: "Tocantins"}
+      
+      ...
+      
   ]);
 
 ```
 
 ---
 
-## Obter e setar um valor no combo via javascript
+## Obter e setar um valor no autocompleteJS via javascript
 
 Pegando o valor selecionado no combo
 ```javascript
 obj.getValue();
 ```
 
-Setando o valor no combo. Será selecionado automaticamente o item com o valor informado
+Setando o valor no combo via javascript. Será selecionado automaticamente o item com o valor informado
 ```javascript
 obj.setValue('PA');
+```
+ou
+
+Setando o valor na propriedade "**data-value**" no próprio combo do HTML:
+
+```html
+
+<select name="uf" id="uf" data-set="{SETA_AQUI_O_VALOR}"></select>
+
 ```
